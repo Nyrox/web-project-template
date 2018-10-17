@@ -1,0 +1,22 @@
+@import "node_modules/concise.css/concise";
+
+
+:root {
+	line-height: 1.5;
+}
+
+section {
+	margin-bottom: 1lh;
+	padding-top: .5lh;
+}
+
+
+@custom-media --medium (width >= 768px);
+
+@media (--medium) {
+	// Styles for medium size devices and up (bigger than 768px)
+	body {
+		font-size: 18px;
+	}
+  }
+

@@ -1,0 +1,35 @@
+{
+  "name": "concise_test_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "babel-loader": "^8.0.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^1.0.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.4",
+    "postcss": "^7.0.5",
+    "postcss-custom-media": "^7.0.6",
+    "postcss-input-range": "^4.0.0",
+    "postcss-lh": "^2.0.2",
+    "postcss-loader": "^3.0.0",
+    "postcss-media-minmax": "^4.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "vue-loader": "^15.4.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "concise.css": "^4.1.2",
+    "vue": "^2.5.17"
+  }
+}
