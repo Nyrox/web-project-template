@@ -4,5 +4,6 @@ module.exports = {
 		require("postcss-input-range"),
 		require("postcss-media-minmax"),
 		require("postcss-lh"),
+		require("cssnano")
 	]
 }

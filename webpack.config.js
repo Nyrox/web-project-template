@@ -1,6 +1,5 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 const JavascriptConfig = {
 	test: /\.js$/,
@@ -36,7 +35,8 @@ const frontend = {
 	},
 	resolve: {
 		alias: {
-			'vue$': 'vue/dist/vue.esm.js'
+			'vue$': 'vue/dist/vue.esm.js',
+			"settings$": path.resolve(__dirname, 'frontend/styles/_settings.scss')
 		},
 	},
 	module: {
@@ -49,8 +49,7 @@ const frontend = {
 	plugins: [
 		new MiniCssExtractPlugin({
 			filename: "[name].css",
-		}),
-		new VueLoaderPlugin()
+		})
 	],
 	watch: true
 }

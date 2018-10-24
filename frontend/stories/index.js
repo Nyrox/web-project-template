@@ -1,12 +1,27 @@
 import Vue from "vue";
 
-import { storiesOf } from "@storybook/vue";
+import { storiesOf, addDecorator } from "@storybook/vue";
 
+import BaseStory from "./BaseStory.vue";
+import Variation from "./Variation.vue";
 import CIButton from "../templates/Atoms/CIButton.vue";
 
-storiesOf("CIButton", module)
-	.add("story as a template", () => ({
-		components: { "ci-button": CIButton },
-		template: "<ci-button>story as a function template</ci-button>"
-	}));
+Vue.component("base-story", BaseStory);
+Vue.component("variation", Variation);
+Vue.component("ci-button", CIButton);
+
+storiesOf("Atoms/CIButton", module)
+	.add("Simple Button", () => ({
+		template: `
+			<base-story>
+				<variation title="Primary">
+					<ci-button>Read</ci-button>
+				</variation>
+				<variation title="Secondary">
+					<ci-button look="secondary">More</ci-button>
+				</variation>
+			</base-story>
+		`
+	}))
+;
 	
