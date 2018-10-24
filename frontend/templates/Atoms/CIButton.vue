@@ -6,7 +6,8 @@
 </template>
 
 <script>
-module.exports = {
+export default {
+	name: "ci-button",
 	data: function() {
 		return {
 			greeting: "World!"
@@ -14,3 +15,4 @@ module.exports = {
 	}
 }
 </script>
+

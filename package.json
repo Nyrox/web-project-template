@@ -4,14 +4,17 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@storybook/vue": "^4.0.0-alpha.25",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
+    "babel-preset-vue": "^2.0.2",
     "css-loader": "^1.0.0",
     "mini-css-extract-plugin": "^0.4.4",
     "node-sass": "^4.9.4",

@@ -24,6 +24,7 @@ const SassConfig = {
 
 const VueConfig = {
 	test: /\.vue$/,
+	exclude: "/node_modules/",
 	loader: 'vue-loader'
 };
 
@@ -54,4 +55,4 @@ const frontend = {
 	watch: true
 }
 
-module.exports = [frontend];
+module.exports = frontend;

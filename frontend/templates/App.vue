@@ -1,6 +1,6 @@
 <template>
-	
 	<div grid column="6 +3">
+		<ci-button></ci-button>
 		<div container>
 			<h3>Article Category</h3>
 			<h1>Hello world - An adventure in frontend</h1>
@@ -11,13 +11,17 @@
 
 </template>
 
-
 <script>
-module.exports = {
+import CIButton from "./Atoms/CIButton.vue";
+
+export default {
 	data: function() {
 		return {
 			
 		}
+	},
+	components: {
+		"ci-button": CIButton
 	}
 }
 </script>

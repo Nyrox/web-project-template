@@ -2,7 +2,7 @@
 import Vue from "vue";
 
 import App from "../templates/App.vue";
-import CIButton from '../templates/CIButton.vue';
+import CIButton from '../templates/Atoms/CIButton.vue';
 
 new Vue({
 	el: "#app",
