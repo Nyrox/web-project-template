@@ -7,6 +7,9 @@
 
 <script>
 export default {
+	name: "ci-button",
+	story: "Atoms",
+	token: '<ci-button look="secondary">More</ci-button>',
 	props: {
 		look: {
 			type: String,

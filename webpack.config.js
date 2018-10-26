@@ -36,7 +36,8 @@ const frontend = {
 	resolve: {
 		alias: {
 			'vue$': 'vue/dist/vue.esm.js',
-			"settings$": path.resolve(__dirname, 'frontend/styles/_settings.scss')
+			"settings$": path.resolve(__dirname, 'frontend/styles/_settings.scss'),
+			"templates": path.resolve(__dirname, "frontend/templates")
 		},
 	},
 	module: {

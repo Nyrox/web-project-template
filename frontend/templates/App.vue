@@ -12,9 +12,12 @@
 </template>
 
 <script>
-import CIButton from "./Atoms/CIButton.vue";
+import CIButton from "templates/Atoms/ci_button.vue";
 
 export default {
+	name: "app",
+	story: "Organisms",
+	token: '<app />',
 	data: function() {
 		return {
 			
