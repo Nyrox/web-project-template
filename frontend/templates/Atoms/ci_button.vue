@@ -8,11 +8,16 @@
 <script>
 export default {
 	name: "ci-button",
+	introduction: "A shitty button",
+	description: `
+	This \`Button\` is the shit yo.
+	`,
 	story: "Atoms",
 	token: '<ci-button look="secondary">More</ci-button>',
 	props: {
 		look: {
 			type: String,
+			note: "One of several available styles.",
 			default: function() { return "primary"; },
 			validator: function(v) {
 				return ["primary", "secondary", "dark", "light"].indexOf(v) !== -1

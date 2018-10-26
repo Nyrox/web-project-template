@@ -28,7 +28,7 @@ const VueConfig = {
 };
 
 const frontend = {
-	entry: ["./frontend/scripts/main.js", "./frontend/styles/main.scss"],
+	entry: ["./frontend/scripts/main.js", "./frontend/styles/main.scss", "./frontend/styles/documentation.scss"],
 	output: {
 		filename: "main.js",
 		path: path.resolve(__dirname, "frontend/dist")
